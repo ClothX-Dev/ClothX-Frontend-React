@@ -1,0 +1,121 @@
+.mainHeader {
+    position: relative;
+}
+
+.mainNavigation {
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+.leftMainNav,
+.rightMainNav {
+    flex: 1;
+}
+
+.leftMainNav {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.mainIconCont img {
+    height: 60px;
+    cursor: pointer;
+}
+
+#dummyCheckbox {
+    display: none;
+}
+
+.hamburger {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 7px;
+}
+
+.hamburger > span {
+    height: 6px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: black;
+    transition: transform, opacity, 500ms;
+}
+
+#dummyCheckbox:checked + .hamburger :nth-child(1) {
+    transform: translate(0, 13px) rotate(40deg);
+}
+
+#dummyCheckbox:checked + .hamburger :nth-child(2) {
+    opacity: 0;
+}
+
+#dummyCheckbox:checked + .hamburger :nth-child(3) {
+    transform: translate(0, -13px) rotate(-40deg);
+}
+
+#dummyCheckbox:checked ~ .secondaryNav{
+    transform: translateX(0%);
+}
+
+.rightMainNav {
+    display: flex;
+    align-items: center;
+}
+
+.mainNavigation > .rightMainNav > ul {
+    list-style: none;
+}
+
+.rightMainNav > ul > li {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.rightMainNav > ul > li.active{
+    font-weight: 700;
+}
+
+.loginBtn {
+    background-color: var(--primary-btn-clr);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.secondaryNav {
+    position: absolute;
+    height: 500px;
+    width: 15%;
+    top: 3px;
+    left: 3px;
+    background-color: var(--sideBar-bg-clr);
+    border-radius: 10px;
+    transition: transform 500ms ease-in-out;
+    transform: translateX(-120%);
+}
+
+.secondaryNav .sideBarNav > ul{
+    display: grid;
+    grid-template-rows: 4fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.sideBarNav > ul > li {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+}
+
+.sideBarNav > ul :first-child {
+    border: none;
+}
