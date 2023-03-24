@@ -1,3 +1,5 @@
+import ClothXLogo1 from '../../assets/clothXPrimaryLogo-1.png' 
+import ClothXLogo2 from '../../assets/clothXPrimaryLogo-2.png' 
 import './header.css'
 
 const Header = () => {
@@ -38,8 +40,8 @@ const Header = () => {
                     </aside>
                     <div className='mainIconCont'>
                         <a href='#'>
-                            <img src='src/assets/clothXPrimaryLogo-1.png' alt='' />
-                            <img src='src/assets/clothXPrimaryLogo-2.png' alt='React Icon' />
+                            <img src={ClothXLogo1} alt='ClothX Icon 1' />
+                            <img src={ClothXLogo2} alt='ClothX Icon 2' />
                         </a>
                     </div>
                 </div>

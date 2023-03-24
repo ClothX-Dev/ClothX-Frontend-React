@@ -2,9 +2,9 @@ import './heroSection.css'
 
 const HeroSection = () => {
     return (
-        <div className="banner">
+        <section className="banner">
             <img src='src/assets/bannerImg.png' alt="Welcome Banner Image" />
-        </div>
+        </section>
     )
 }
 
