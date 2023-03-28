@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #F2E9E2;
 }
 
 .guideVideoSection .guideVideoPlayer{

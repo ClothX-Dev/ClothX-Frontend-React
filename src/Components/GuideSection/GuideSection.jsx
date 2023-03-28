@@ -4,7 +4,7 @@ import './guideSection.css'
 
 const GuideSection = () => {
     return (
-        <section className='guideSection'>
+        <div className='guideSection'>
             <div className='textSection'>
                 <p>
                     Guide <br /> To <br /> Book <br /> A Service
@@ -17,7 +17,7 @@ const GuideSection = () => {
                     <img src={ClothXLogo2} alt='ClothX Icon 2' />
                 </a>
             </div>
-        </section>
+        </div>
     )
 }
 

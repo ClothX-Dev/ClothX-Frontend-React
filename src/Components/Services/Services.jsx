@@ -6,7 +6,7 @@ import './services.css'
 
 const Services = () => {
     return (
-        <section className='services'>
+        <div className='services'>
             <h2>Our Services</h2>
             <div className='servicesImgCont'>
                 <img src={WashImg} alt='Washing Machine Image' />
@@ -14,7 +14,7 @@ const Services = () => {
                 <img src={DryCleanImg} alt='Dry Clean Image' />
                 <img src={PickupImg} alt='Pickup Image' />
             </div>
-        </section>
+        </div>
     )
 }
 
