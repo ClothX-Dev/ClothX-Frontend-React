@@ -1,0 +1,63 @@
+.location {
+    --primary-bg-clr: rgba(91, 0, 245, 1);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 70px;
+    background-color: rgba(217, 217, 217);
+}
+
+.location .locationLeftSection h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.location .locationRightSection {
+    height: fit-content;
+}
+
+.locationRightSection .cityAvailable {
+    padding: 30px 30px;
+    background-color: rgba(253, 248, 248, 1);
+}
+
+.locationRightSection .cityAvailable h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.locationRightSection ul {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 50px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.locationRightSection ul li {
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.locationRightSection ul li:hover {
+    background-color: rgb(255, 218, 218, 0.3);
+}
+
+.locationRightSection ul li.selectedCity {
+    background-color: rgb(255, 218, 218);
+}
+
+.cityAvailable button {
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    background-color: var(--primary-bg-clr);
+    color: white;
+    border: none;
+}

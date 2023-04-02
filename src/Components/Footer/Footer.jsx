@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='rightFooter'>
-                <section className='rightFooterSections contactUsSection'>
+                <section className='rightFooterSections'>
                     <h6>Contact Us</h6>
                     <div>
                         <span></span>
@@ -47,7 +47,7 @@ const Footer = () => {
                         <p>Chat Support</p>
                     </div>
                 </section>
-                <section className='rightFooterSections forUserSection'>
+                <section className='rightFooterSections'>
                     <h6>For User</h6>
                     <a href='#'>
                         <p>Our Services</p>
@@ -59,7 +59,7 @@ const Footer = () => {
                         <p>Mobile App</p>
                     </a>
                 </section>
-                <section className='rightFooterSections forBusinessSection'>
+                <section className='rightFooterSections'>
                     <h6>For Business</h6>
                     <a href='#'>
                         <p>Become a Partner</p>

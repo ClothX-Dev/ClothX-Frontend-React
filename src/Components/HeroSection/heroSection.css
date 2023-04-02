@@ -1,11 +1,37 @@
-.banner{
+.heroSection {
+    display: flex;
+    height: 450px;
+    background-color: var(--tertiary-bg-clr);
+}
+
+.heroSection > * {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    background-color: var(--banner-bg-clr);
 }
 
-.banner > img{
-    object-fit: contain;
+.heroLeftSection, .heroRightSection{
+    text-transform: capitalize;
+}
+
+.heroLeftSection h1{
+    font-size: 4rem;
+}
+
+.heroRightSection{
+    display: flex;
+    flex-direction: column;
+}
+
+.heroRightSection *{
+    flex-shrink: 0;
+    width: 80%;
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.heroRightSection h2{
+    margin-bottom: 3rem;
 }

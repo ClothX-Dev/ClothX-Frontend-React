@@ -21,17 +21,17 @@
     place-items: center;
 }
 
-.userServiceGrid p{
+.userServiceGrid p {
     font-size: 2rem;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.bookNowCont button{
+.bookNowCont button {
     color: white;
     font-size: 2rem;
     padding: 5px 20px;
     font-weight: 700;
     border: none;
-    background-color: var(--primary-btn-clr);
+    background-color: var(--primary-bg-clr);
 }

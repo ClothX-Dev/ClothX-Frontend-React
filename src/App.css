@@ -10,9 +10,9 @@
 }
 
 :root{
-    --primary-btn-clr: rgb(251, 45, 3);
-    --sideBar-bg-clr: rgb(255, 92, 31);
-    --banner-bg-clr: rgb(70, 2, 213);
+    --primary-bg-clr: rgb(251, 45, 3);
+    --secondary-bg-clr: rgb(255, 92, 31);
+    --tertiary-bg-clr: rgba(242, 233, 226, 1);
 }
 
 body{
