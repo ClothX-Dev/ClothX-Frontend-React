@@ -1,0 +1,16 @@
+.ourServices{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.ourServices > h2{
+    margin: 0 0 70px 70px;
+    font-size: 1.8rem;
+}
+
+.ourServicesImgCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}

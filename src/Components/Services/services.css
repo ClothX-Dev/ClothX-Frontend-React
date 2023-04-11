@@ -1,16 +1,112 @@
-.services{
+.servicesWrapper {
     width: 100%;
-    padding: 70px 0;
-}
-
-.services > h2{
-    margin: 0 0 70px 70px;
-    font-size: 1.8rem;
-}
-
-.servicesImgCont{
+    padding-top: 100px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.servicesWrapper h1{
+    text-align: left;
+    width: 80%;
+}
+
+.service {
+    --service-bg-clr: rgba(209, 194, 233, 1);
+    --service-btn-bg-clr: rgba(255, 251, 251, 1);
+    --count-bg-clr: rgba(217, 217, 217, 1);
+
+    width: 80%;
+    padding: 50px 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5%;
+    background-color: var(--service-bg-clr);
+}
+
+.service .leftServiceSection img {
+    width: 100%;
+}
+
+.centerServiceSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centerServiceSection h2 {
+    flex: 1;
+
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.centerServiceSection .clothSelectionArea {
+    flex: 2;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+.clothSelectionArea .topSelectionSection {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.topSelectionSection button {
+    width: fit-content;
+    height: fit-content;
+    border: 0;
+    margin: 0 10px;
+    padding: 5px 20px;
+    background-color: var(--service-btn-bg-clr);
+}
+
+.rightServiceSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+.rightServiceSection .countOfCloths {
+    display: flex;
+    gap: 20px;
+}
+
+.countOfCloths .countCont {
+    display: flex;
+    padding: 2px 5px;
+    background-color: var(--count-bg-clr);
+}
+
+.countCont .count {
+    margin-right: 20px;
+}
+
+.countCont .countBtnCont Svg {
+    display: block;
+    user-select: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.rightServiceSection .bookNow{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    background-color: var(--count-bg-clr);
+    border: 0;
+}
+
+.servicesWrapper > :last-child{
+    margin-bottom: 100px;
 }

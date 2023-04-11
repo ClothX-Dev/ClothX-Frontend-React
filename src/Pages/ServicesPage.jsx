@@ -1,5 +1,11 @@
+import Services from '../Components/Services/Services'
+
 const ServicesPage = () => {
-    return <div>ServicesPage</div>
+    return (
+        <>
+            <Services />
+        </>
+    )
 }
 
 export default ServicesPage
