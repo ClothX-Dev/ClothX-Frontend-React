@@ -1,3 +1,7 @@
+import { BiPhoneCall } from 'react-icons/bi'
+import { AiOutlineMail } from 'react-icons/ai'
+import { BsChatDots } from 'react-icons/bs'
+
 import InstagramLogo from './../../assets/instagram.png'
 import TwitterLogo from './../../assets/twitter.png'
 import FacebookLogo from './../../assets/facebook.png'
@@ -35,15 +39,15 @@ const Footer = () => {
                 <section className='rightFooterSections'>
                     <h6>Contact Us</h6>
                     <div>
-                        <span></span>
+                        <BiPhoneCall />
                         <p>9999121212</p>
                     </div>
                     <div>
-                        <span></span>
+                        <AiOutlineMail />
                         <p>helpmeclothx@gmail.com</p>
                     </div>
                     <div>
-                        <span></span>
+                        <BsChatDots />
                         <p>Chat Support</p>
                     </div>
                 </section>

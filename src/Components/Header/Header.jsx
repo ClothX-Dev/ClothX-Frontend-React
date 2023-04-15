@@ -1,13 +1,14 @@
-import ClothXLogo1 from '../../assets/clothXPrimaryLogo-1.png' 
-import ClothXLogo2 from '../../assets/clothXPrimaryLogo-2.png' 
+import { Link, NavLink } from 'react-router-dom'
+
+import DressetLogo from '../../assets/dresset_logo.png'
+
 import './header.css'
 
 const Header = () => {
-
     return (
         <header className='mainHeader'>
             <nav className='mainNavigation' aria-label='main-navigation'>
-                <div className='leftMainNav'>
+                <nav className='leftMainNav'>
                     <input type='checkbox' id='dummyCheckbox' />
                     <label htmlFor='dummyCheckbox' className='hamburger'>
                         <span></span>
@@ -21,49 +22,64 @@ const Header = () => {
                                     <img src='src/assets/profileIconNav.png' alt='' />
                                 </li>
                                 <li>
-                                    <a href='#'>Login/Sign up</a>
+                                    <Link to='#'>Login/Sign up</Link>
                                 </li>
                                 <li>
-                                    <a href='#'>About us</a>
+                                    <Link to='about'>About us</Link>
                                 </li>
                                 <li>
-                                    <a href='#'>Services</a>
+                                    <Link to='services'>Services</Link>
                                 </li>
                                 <li>
-                                    <a href='#'>Location</a>
+                                    <Link to='location'>Location</Link>
                                 </li>
                                 <li>
-                                    <a href='#'>Help & Support</a>
+                                    <Link to='#'>Help & Support</Link>
                                 </li>
                             </ul>
                         </nav>
                     </aside>
                     <div className='mainIconCont'>
                         <a href='#'>
-                            <img src={ClothXLogo1} alt='ClothX Icon 1' />
-                            <img src={ClothXLogo2} alt='ClothX Icon 2' />
+                            <img src={DressetLogo} alt='Dresset Logo Icon ' />
                         </a>
                     </div>
-                </div>
-                <div className='rightMainNav'>
+                </nav>
+                <nav className='rightMainNav'>
                     <ul>
                         <li>
-                            <a href='#'>Location</a>
-                        </li>
-                        <li className='active'>
-                            <a href='#'>Home</a>
-                        </li>
-                        <li>
-                            <a href='#'>About us</a>
+                            <NavLink
+                                to='/location'
+                                className={({ isActive }) => (isActive ? 'active' : '')}>
+                                Location
+                            </NavLink>
                         </li>
                         <li>
-                            <a href='#'>Services</a>
+                            <NavLink
+                                to='/'
+                                className={({ isActive }) => (isActive ? 'active' : '')}>
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to='/about'
+                                className={({ isActive }) => (isActive ? 'active' : '')}>
+                                About us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to='/services'
+                                className={({ isActive }) => (isActive ? 'active' : '')}>
+                                Services
+                            </NavLink>
                         </li>
                     </ul>
-                    <a href='#'>
+                    <NavLink to='/login'>
                         <button className='loginBtn'>Login/Sign up</button>
-                    </a>
-                </div>
+                    </NavLink>
+                </nav>
             </nav>
         </header>
     )

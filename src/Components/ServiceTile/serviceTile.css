@@ -1,0 +1,108 @@
+.service {
+    --service-bg-clr: rgba(209, 194, 233);
+    --service-btn-bg-clr: rgba(255, 251, 251);
+    --service-btn-selected-bg-clr: rgb(255, 218, 218);
+    --count-bg-clr: rgba(217, 217, 217);
+
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 5%;
+    background-color: var(--service-bg-clr);
+}
+
+.service .leftServiceSection img {
+    width: 100%;
+}
+
+.centerServiceSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.centerServiceSection h2 {
+    flex: 1;
+
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.centerServiceSection .clothSelectionArea {
+    flex: 2;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+}
+
+.clothSelectionArea .topSelectionSection {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.topSelectionSection .rightSelectionSection button {
+    width: fit-content;
+    height: fit-content;
+    border: 0;
+    margin: 5px;
+    padding: 5px 20px;
+    cursor: initial;
+    transition: background-color 500ms;
+}
+
+/* .topSelectionSection button:hover {
+    background-color: var(--service-btn-bg-clr);
+}
+
+.topSelectionSection button.active {
+    background-color: var(--service-btn-selected-bg-clr);
+} */
+
+.rightServiceSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+.rightServiceSection .countOfCloths {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countOfCloths .countCont {
+    display: flex;
+    padding: 2px 5px;
+    background-color: var(--count-bg-clr);
+}
+
+.countCont .count {
+    margin-right: 20px;
+}
+
+.countCont .countBtnCont svg {
+    display: block;
+    user-select: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.rightServiceSection .bookNow {
+    padding: 5px 25px;
+    font-size: 1.3rem;
+    background-color: var(--count-bg-clr);
+    border: 0;
+}
+
+.servicesWrapper > :last-child {
+    margin-bottom: 100px;
+}

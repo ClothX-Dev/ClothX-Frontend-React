@@ -1,5 +1,5 @@
-import ClothXLogo1 from '../../assets/clothXPrimaryLogo-1.png'
-import ClothXLogo2 from '../../assets/clothXPrimaryLogo-2.png'
+import DressetLogo from '../../assets/dresset_logo.png'
+
 import './guideSection.css'
 
 const GuideSection = () => {
@@ -13,8 +13,7 @@ const GuideSection = () => {
             <div className='guideVideoSection'>
                 <a href='#' className='guideVideoPlayer'>
                     <p>Click To Play</p>
-                    <img src={ClothXLogo1} alt='ClothX Icon 1' />
-                    <img src={ClothXLogo2} alt='ClothX Icon 2' />
+                    <img src={DressetLogo} alt='Dresset Logo' />
                 </a>
             </div>
         </div>

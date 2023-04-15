@@ -1,5 +1,4 @@
 .footer{
-    height: 335px;
     display: flex;
 }
 
@@ -16,7 +15,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 40px;
+    gap: 15px;
     color: white;
 }
 
@@ -26,17 +25,17 @@
 }
 
 .leftFooter img{
-    height: 50px;
-    margin: 15px;
+    height: 40px;
+    margin: 12px;
 }
 
 .leftFooter .enterEmailCont{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .leftFooter .enterEmailCont p{
-    padding: 5px 70px;
+    padding: 5px 20px;
 }
 
 .leftFooter .enterEmailCont :nth-child(1){
@@ -52,21 +51,16 @@
 
 .rightFooter{
     flex: 6;
+    padding: 30px;
     background-color: var(--secondary-bg-clr);
     display: flex;
-}
-
-.rightFooterSections{
-    flex: 1;
-    min-height: 60%;
-    height: fit-content;
-    margin: auto 0;
+    justify-content: space-around;
 }
 
 .rightFooterSections h6{
     font-weight: 400;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
 }
 
@@ -74,13 +68,15 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0 30px;
 }
 
-.rightFooterSections span{
-    height: 40px;
-    width: 40px;
-    background-color: red;
+.rightFooterSections > div{
+    margin: 15px 0;
+}
+
+.rightFooterSections svg{
+    font-size: 1.5rem;
+    fill: white;
 }
 
 .rightFooterSections > a{

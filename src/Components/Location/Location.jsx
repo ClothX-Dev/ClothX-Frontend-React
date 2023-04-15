@@ -1,4 +1,7 @@
 import { useState } from 'react'
+
+import { filterSelection } from '../utilFunctions'
+
 import EarthImg from './../../assets/earthImg.png'
 import './location.css'
 
@@ -6,9 +9,10 @@ const Location = () => {
     const [selectedCity, setSelectedCity] = useState(null)
     const [selectedCityIndex, setSelectedCityIndex] = useState(null)
 
-    const handleCitySelection = (e, index) => {
+    const handleCitySelection = ({ target }, index) => {
+        const filteredCityName = filterSelection(target.textContent)
         setSelectedCityIndex(index)
-        setSelectedCity(e.target.textContent)
+        setSelectedCity(filteredCityName)
     }
 
     const cities = [
