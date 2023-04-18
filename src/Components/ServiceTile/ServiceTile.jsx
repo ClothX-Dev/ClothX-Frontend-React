@@ -27,9 +27,7 @@ const ServiceTile = ({ id, icon, heading, pricing }) => {
                         </div>
                         <div className='rightSelectionSection'>
                             {cloths.map(({ id, clothName }) => (
-                                <button key={id}>
-                                    {clothName}
-                                </button>
+                                <button key={id}>{clothName}</button>
                             ))}
                         </div>
                     </div>
@@ -63,7 +61,9 @@ const ServiceTile = ({ id, icon, heading, pricing }) => {
                         </div>
                     </div>
                 </div>
-                <button className='bookNow' disabled={!cothCount}>Book Now</button>
+                <button className='bookNow' disabled={!cothCount}>
+                    Book Now
+                </button>
             </div>
         </div>
     )

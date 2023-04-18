@@ -1,0 +1,126 @@
+.loginSignUpPage {
+    --primary-bg-clr: rgba(91, 0, 245, 1);
+
+    width: 100%;
+    background-color: rgb(209, 194, 233);
+}
+
+.loginSignUp {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    color: white;
+}
+
+.leftLoginSection {
+    flex: 2;
+    padding: 25px 35px;
+    background-color: var(--primary-bg-clr);
+}
+
+.leftLoginSection > h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.leftLoginSection > p {
+    line-height: 31px;
+    font-size: 1.2rem;
+}
+
+.rightLoginSection {
+    flex: 3;
+    padding: 25px 35px;
+    background-color: white;
+}
+
+.rightLoginUpperSection h2 {
+    color: black;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.rightLoginUpperSection > form > input {
+    width: 85%;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(217, 217, 217);
+}
+
+.rightLoginUpperSection > form > .formError {
+    color: red;
+    margin-bottom: 30px;
+}
+
+.rightLoginUpperSection > form > .nextbtn {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: rgba(72, 56, 99);
+    color: white;
+}
+
+.rightLoginSection > .rightLoginLowerSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightLoginLowerSection > * {
+    margin: 5px 0;
+}
+
+.rightLoginLowerSection p {
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.rightLoginLowerSection button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    background-color: rgb(32, 33, 36);
+}
+
+.rightLoginLowerSection button p {
+    padding: 5px;
+    font-size: inherit;
+    color: inherit;
+    margin: 0 5px;
+}
+
+
+.rightLoginLowerSection button svg {
+    font-size: 1.5rem;
+}
+
+.rightLoginLowerSection .facebookBtn {
+    padding: 0 15px;
+    background-color: rgb(26, 119, 242);
+}
+
+.rightLoginLowerSection .googleIconCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    margin: 1px;
+    border-radius: 5px 0 0 5px;
+}
+
+.rightLoginLowerSection > :last-child > a{
+    color: blue;
+}

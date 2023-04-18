@@ -66,7 +66,7 @@
     align-items: center;
 }
 
-.mainNavigation > .rightMainNav > ul {
+.rightMainNav > ul {
     list-style: none;
 }
 
@@ -74,7 +74,13 @@
     position: relative;
     font-size: 1.5rem;
     display: inline-block;
+    border-radius: 5px;
     margin-right: 50px;
+    transition: opacity 500ms;
+}
+
+.rightMainNav > ul > li:hover {
+    opacity: 0.3;
 }
 
 .rightMainNav > ul > li::after {
